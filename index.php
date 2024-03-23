@@ -1,8 +1,9 @@
 <?php
+date_default_timezone_set("Asia/Taipei");
 if (isset($_GET['month'])) {
     $month = $_GET['month'];
 } else {
-    $month = date('m');
+    $month = date('n');
 }
 ?>
 <!DOCTYPE html>
@@ -20,7 +21,8 @@ if (isset($_GET['month'])) {
 <style>
     body {
         background-image: url("./imgs/bg<?php echo $month; ?>.jpg");
-        background-size: cover;
+        background-repeat: none;
+        background-size: auto;
     }
 </style>
 
